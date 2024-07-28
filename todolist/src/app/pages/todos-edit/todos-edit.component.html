@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="editTodos">
+    <h1>Edit this Task</h1>
+    <form #editForm="ngForm" (ngSubmit)="EditTodos(editForm)">
+      <input
+        name="content"
+        type="text"
+        placeholder="Edit this Task"
+        [ngModel]="todos.content"
+        required
+        class="smallInput"
+      />
+      <input
+        name="date"
+        type="date"
+        [ngModel]="todos.date | date : 'yyyy-MM-dd'"
+        required
+        class="smallInput"
+      />
+      <br /><br />
+      <button type="submit" class="btnEditTask">
+        <i class="fas fa-pencil-alt"></i> Edit
+      </button>
+    </form>
+  </div>
+</div>

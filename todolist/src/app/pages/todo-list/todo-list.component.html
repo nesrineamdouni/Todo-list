@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Todo List</h1>
+  <a class="btn btn-success" routerLink="/todos/form/ajouter"
+    ><i class="fas fa-plus me-2"></i>Add</a
+  >
+  <hr />
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let todo of todos">
+          <td>{{ todo.content }}</td>
+          <td>{{ todo.date | date }}</td>
+          <td>
+            <a
+              class="btn btn-warning me-2"
+              routerLink="/todos/form/modifier/{{ todo._id }}"
+            >
+              <i class="fas fa-pencil-alt"></i>
+            </a>
+            <a class="btn btn-danger" (click)="DeleteTodos(todo._id)">
+              <i class="fas fa-trash-alt"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

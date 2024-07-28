@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="addTodos">
+    <h1>Add a new task</h1>
+    <form #addForm="ngForm" (ngSubmit)="AddTodos(addForm)">
+      <input
+        name="content"
+        type="text"
+        placeholder="Add a new task"
+        ngModel
+        required
+        #content="ngModel"
+        class="smallInput"
+      />
+      <input
+        name="date"
+        type="date"
+        ngModel
+        required
+        #date="ngModel"
+        class="smallInput"
+      />
+      <br /><br />
+      <button type="submit" class="btnAddTask">
+        <i class="fas fa-plus me-2"></i>Add Task
+      </button>
+    </form>
+  </div>
+</div>

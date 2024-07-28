@@ -1,0 +1,56 @@
+.container {
+  height: 100vh;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.btnAdd {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+
+.btnEdit {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.btnDelete {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.todos {
+  display: flex;
+  align-items: center;
+}
+
+.todos p {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}

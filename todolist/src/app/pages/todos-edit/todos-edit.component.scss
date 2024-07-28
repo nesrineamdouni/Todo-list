@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+
+.editTodos {
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.editTodos h1 {
+  margin-bottom: 15px;
+}
+
+.editTodos form {
+  text-align: center;
+}
+
+.editTodos form input.smallInput {
+  margin-top: 15px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.editTodos form input.smallInput:focus {
+  outline: none;
+  border-color: blue;
+}
+
+.editTodos form button.btnEditTask {
+  background-color: #4169e1;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
